@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Technology Bulletin Board</title>
+    <meta charset="utf-8" />
+    
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/jquery-1.12.4.js"></script>
+    <script src="scripts/jquery-ui.js"></script>
+    <script src="scripts/angular-ui/ui-bootstrap.min.js"></script>
+     
+    <script src="scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/indexCss.css" rel="stylesheet" />
+    <link href="style1.css" rel="stylesheet" />
+    <link href="Style2.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="scripts/index.js"></script>
+</head>
+<body  onresize="ChangeHeight()" ng-app="aminApp1">
+    <div class="col-lg-12 bodyV1" ng-controller="AminIndexController">
+
+
+        <div class="dragable1" id="dragable1" ng-click="popOutPanel(1)">
+            <h2 class="marginTop20px" style="color:white;">Technology Bulletin Board</h2>
+        </div>
+
+        <div class="my_popup_open dragable2" id="dragable2" ng-click="popOutPanel(3)">
+            <div id="pindragable3" class="pindragable3 topRightPin"> </div>
+                <div class="col-lg-10">
+                    <h3>Contact Us</h3>        
+
+                {{FisrtName}}
+            </div>
+        </div>
+        <div class="my_popup_open dragable3" id="dragable3" ng-click="popOutPanel(2)">
+            <div id="pindragable3" class="pindragable3 topRightPin">
+                          </div>
+            
+            <div class="col-lg-10" >
+                <br />
+                <div class="row clearleft-custom flow-offset-1 offset-1" >
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <div class="thumbnail thumbnail-mod-1">
+                            <span class="icon icon-success icon-lg icon-mod-1 "><i class="fa fa-male" aria-hidden="true"></i></span>
+                            <div class="caption">
+                                <h5 style="margin-left:30px;color:white;">Basic</h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <div class="thumbnail thumbnail-mod-1">
+                            <span class="icon icon-success icon-lg icon-mod-1"><i class="fa fa-car" aria-hidden="true"></i></span>
+                            <div class="caption">
+                                <h5 style="margin-top:-25px;color:white;">Premium</h5>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <div class="thumbnail thumbnail-mod-1">
+                            <span class="icon icon-success icon-lg icon-mod-1"><i class="fa fa-fighter-jet" aria-hidden="true"></i></span>
+                            <div class="caption">
+                                <h5 style="color:white;" >Ultimate</h5>
+                          
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-xs-12 col-sm-6 col-lg-3">
+                        <div class="thumbnail thumbnail-mod-1">
+                            <span class="icon icon-success icon-lg icon-mod-1 fa-comments-o"></span>
+                            <div class="caption">
+                                <h4> Quick<br>Support</h4>
+                                <p>Problems with your website or email? Check our Knowledgebase or contact us. We're here to help!</p>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+</div>
+            </div>
+        <div class="my_popup_open dragable4" id="dragable4" ng-click="popOutPanel(4)">
+            <div id="pindragable3" class="pindragable3 topRightPin">
+               
+            </div>
+        </div>
+        <div class="my_popup_open dragable5" id="dragable5" ng-click="popOutPanel(5)">
+            <div id="pindragable3" class="pindragable3 topRightPin">
+
+                
+
+            </div>
+        </div>
+        <div class="my_popup_open dragable6" id="dragable6" ng-click="popOutPanel(6)">
+            <div id="pindragable3" class="pindragable3 topRightPin">
+               
+            </div>
+           
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script type="text/ng-template" id="myModalContent.html">
+
+        <div class="col-lg-10">
+            <div class="row clearleft-custom flow-offset-1 offset-1">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="thumbnail thumbnail-mod-1">
+                        <span class="icon icon-success icon-lg icon-mod-1 "><i class="fa fa-male" aria-hidden="true"></i></span>
+                        <div class="caption">
+                            <h4> Retina<br>Ready</h4>
+                            <p>Now you can enjoy razor sharp text, vibrant colors and crisp images on your retina display devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="thumbnail thumbnail-mod-1">
+                        <span class="icon icon-success icon-lg icon-mod-1"><i class="fa fa-car" aria-hidden="true"></i></span>
+                        <div class="caption">
+                            <h4> Incredibly<br>Flexible</h4>
+                            <p>Some developers have a defined workflow and are used to using various tools independently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="thumbnail thumbnail-mod-1">
+                        <span class="icon icon-success icon-lg icon-mod-1"><i class="fa fa-fighter-jet" aria-hidden="true"></i></span>
+                        <div class="caption">
+                            <h4> Clean<br>Design</h4>
+                            <p>Making design choices for your website can be a daunting task.</p>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </script>
+
+</body>
+</html>
+
+<script type="text/ng-template" id="stackedModal.html">
+     
+     
+        <div class="col-lg-10" style="background-color:white;">
+            <div class="row clearleft-custom flow-offset-1 offset-1">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="thumbnail thumbnail-mod-1">
+                        <span class="icon icon-success icon-lg icon-mod-1 "><i class="fa fa-male" aria-hidden="true"></i></span>
+                        <div class="caption">
+                            <h4> Retina<br>Ready</h4>
+                            <p>Now you can enjoy razor sharp text, vibrant colors and crisp images on your retina display devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="thumbnail thumbnail-mod-1">
+                        <span class="icon icon-success icon-lg icon-mod-1"><i class="fa fa-car" aria-hidden="true"></i></span>
+                        <div class="caption">
+                            <h4> Incredibly<br>Flexible</h4>
+                            <p>Some developers have a defined workflow and are used to using various tools independently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="thumbnail thumbnail-mod-1">
+                        <span class="icon icon-success icon-lg icon-mod-1"><i class="fa fa-fighter-jet" aria-hidden="true"></i></span>
+                        <div class="caption">
+                            <h4> Clean<br>Design</h4>
+                            <p>Making design choices for your website can be a daunting task.</p>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+</script>

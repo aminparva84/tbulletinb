@@ -1,0 +1,97 @@
+﻿
+.bodyV1 {
+    border-style: solid;
+    border-width: 57px 65px 53px 69px;
+    -moz-border-image: url(../pics/Banner_Frame.png) 57 65 53 69 round;
+    -webkit-border-image: url(../pics/Banner_Frame.png) 57 65 53 69 round;
+    -o-border-image: url(../pics/Banner_Frame.png) 57 65 53 69 round;
+    border-image: url(../pics/Banner_Frame.png) 57 65 53 69 round;
+}
+
+.dragable1, .dragable2, .dragable3, .dragable4, .dragable5, .dragable6 {
+    box-shadow: #acacac 10px 10px 10px 10px;
+    cursor: move;
+    text-align: center;
+    padding-top: 10px;
+    resize:both;
+  position:relative;
+  display:inline-flex;
+    transition-duration:0s;
+    transition-timing-function:ease;
+    top:0%;
+    left:0%;
+}
+
+.dragable1 {
+    background-color: #f3791f;
+    width: 40%;
+    height: 150px;
+    left: 30%;
+   top: 0%;
+}
+
+.dragable2 {
+    background-color: #00a977;
+    width: 30%;
+    height: 200px;
+    left: 31%;
+    top: 7%;
+     /*transform:translate(31,7);
+     transform:rotate(-90deg);*/
+}
+
+.dragable3 {
+    background-color: #d61e2a;
+    width: 23%;
+    height: 350px;
+    left:-71%;
+    top: 2%;
+}
+
+.dragable4 {
+    background-color: #613b97;
+    width: 60%;
+    height: 100px;
+    left: 0%;
+    top: 3%;
+}
+
+.dragable5 {
+    background-color: #074d9f;
+    width: 30%;
+    height: 100px;
+    left: 10%;
+    top: 2%;
+}
+
+.dragable6 {
+    background-color: #246dd7;
+    width: 40%;
+    height: 200px;
+    left: 30%;
+    top: -58%;
+}
+
+.marginTop20px {
+    margin-top: 20px;
+}
+
+.topRightPin {
+    background-image: url(../pics/pinupn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: -50px;
+    margin-right: -28px;
+}
+.dilog1 {
+    height:120px;
+    width:140px;
+    border:1px solid yellow;
+}
+.modal-backdrop
+{
+    opacity:0.8 !important;
+}

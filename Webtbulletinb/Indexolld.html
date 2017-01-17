@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Technology Bulletin Board</title>
+    <meta charset="utf-8" />
+    
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-animate.min.js"></script>
+   
+    <script src="scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+   
+   
+    <link href="Content/indexCss.css" rel="stylesheet" />
+    <script src="scripts/index.js"></script>
+</head>
+<body  ng-app="aminApp1">
+    <div class="col-lg-12 bodyV1" ng-controller="AminIndexController">
+
+
+        <div class="col-md-2 dragable1" id="dragable1" ng-click="popOutPanel()">
+            <h1 class="marginTop20px">Technology Bulletin Board</h1>
+        </div>
+
+        <div class="my_popup_open dragable2" id="dragable2" ng-click="popOutPanel()">
+            <div id="pindragable3" class="pindragable3 topRightPin">
+
+
+                {{FisrtName}}
+            </div>
+        </div>
+        <div class="my_popup_open dragable3" id="dragable3" ng-click="popOutPanel()">
+            <div id="pindragable3" class="pindragable3 topRightPin">
+                {{LastName}}
+            </div>
+        </div>
+        <div class="my_popup_open dragable4" id="dragable4" ng-click="popOutPanel()">
+            <div id="pindragable3" class="pindragable3 topRightPin"></div>
+        </div>
+        <div class="my_popup_open dragable5" id="dragable5" ng-click="popOutPanel(5)">
+            <div id="pindragable3" class="pindragable3 topRightPin"></div>
+        </div>
+        <div class="my_popup_open dragable6" id="dragable6" ng-click="popOutPanel(6)">
+            <div id="pindragable3" class="pindragable3 topRightPin"></div>
+        </div>
+
+
+    </div>
+
+
+
+    <!--<script src="scripts/angular-ui/ui-bootstrap-tpls.js"></script>-->
+
+
+    <script type="text/ng-template" id="myModalContent.html">
+
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body" id="modal-body">
+
+            Selected: <b>{{ FisrtName}}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+        </div>
+    </script>
+
+</body>
+</html>
+
+<script type="text/ng-template" id="stackedModal.html">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title-{{name}}">The {{name}} modal!</h3>
+    </div>
+    <div class="modal-body" id="modal-body-{{name}}">
+        Having multiple modals open at once is probably bad UX but it's technically possible.
+    </div>
+
+</script>
